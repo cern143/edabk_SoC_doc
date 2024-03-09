@@ -90,6 +90,7 @@ với `$YOURDIR` là đường dẫn tới thư mục bạn tạo ở trên. B�
 Copy dòng được hightlight ra đâu đó, thay 8888 bằng port bạn đã chọn rồi mở link trong browser của host. Thành quả như ảnh dưới
 ![Screenshot from 2024-03-09 23-01-20](https://github.com/cern143/edabk_SoC_doc/assets/70802909/4a6248b5-9dd3-46b5-9754-493a584fcb5f)
 Chúc các bạn thực hiện thành công!
+> Mọi thắc mắc xin tag em Sơn trên nhóm.
 > Donate cho em Sơn 1 ly cà phê vì đã cày cả tuần để set up server và viết hướng dẫn này >.<
 
 

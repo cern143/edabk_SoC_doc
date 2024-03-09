@@ -30,13 +30,10 @@ Server sẽ được tự động thêm vào network của bạn.
 ## Step II: SSH và VNC
 ### SSH
 > Kết nối ssh sẽ chỉ cho phép bạn điều khiển server bằng command line  (CLI).
-
-Kết nối ssh tới server:
 ```
 ssh $USER@100.68.93.47
 ```
-Với `$USER` là tên user được cấp cho bạn có dạng `usrn`, n là 1 số 1-9
-Password là 123 với mọi user.
+Với `$USER` là tên user được cấp cho bạn có dạng `usrn`, `n` là 1 số 1-9. Nhập user password là 123 với mọi user.
 ### X-forwarding
 > Cũng dựa trên ssh, nhưng cho phép bạn dùng giao diện đồ họa (GUI) với  1 số app. X-forwarding  **rất chậm** với các kết nối mạng ngoài, chỉ sử dụng X-forwarding với các máy trên lab.
 
@@ -57,11 +54,11 @@ sudo apt install remmina
 ```
 
 - ![Mở application](https://www.google.com/url?sa=i&url=https%3A%2F%2Fsupport.system76.com%2Farticles%2Fubuntu-basics%2F&psig=AOvVaw15YMmTJ4WuOEpCOR3qoHy3&ust=1710063959321000&source=images&cd=vfe&opi=89978449&ved=0CBIQjRxqFwoTCMjAn-ny5oQDFQAAAAAdAAAAABAa), nhấp chuột vào icon remmina để chạy app.
-- Chọn chế độ kết nối (bên cạnh thanh tìm kiếm) là VNC. Nhập địa chỉ ip máy chủ vào thanh tìm kiếm là: 100.68.93.47:n. Bấm enter để hoàn tất kết nối
+- Chọn chế độ kết nối (bên cạnh thanh tìm kiếm) là VNC. Nhập địa chỉ ip máy chủ vào thanh tìm kiếm là: 100.68.93.47:n (`n` là số thứ tự user xem ở phần ssh) . Bấm enter để hoàn tất kết nối
 ##### Window
 - Truy cập link `https://www.realvnc.com/en/connect/download/viewer/`, tải installer cho window và chạy nó
 - Mở phần `start` (biểu tượng window góc trái dưới)
-- Nhấn đúp vào biểu tượng RealVNC. Nhập địa chỉ ip máy chủ vào thanh tìm kiếm là: 100.68.93.47:n. Bấm enter để hoàn tất kết nối
+- Nhấn đúp vào biểu tượng RealVNC. Nhập địa chỉ ip máy chủ vào thanh tìm kiếm là: 100.68.93.47:n (`n` là số thứ tự user xem ở phần ssh). Bấm enter để hoàn tất kết nối
 
 
 

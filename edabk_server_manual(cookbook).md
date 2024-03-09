@@ -53,11 +53,13 @@ sudo apt install remmina
 ```
 hình
 - Mở application (icon dưới cùng trong action center a.k.a cái thanh bên trái màn hình), nhấp chuột vào icon remmina để chạy app.
-- Chọn chế độ kết nối (bên cạnh thanh tìm kiếm) là VNC. Nhập địa chỉ ip máy chủ vào thanh tìm kiếm là: 100.68.93.47:n (`n` là số thứ tự user xem ở [phần ssh](#ssh)) . Bấm enter để tiến hành kết nối. Nhập password vnc là @edabk với mọi user
+- Chọn chế độ kết nối (bên cạnh thanh tìm kiếm) là VNC. Nhập địa chỉ ip máy chủ vào thanh tìm kiếm là: 100.68.93.47:n (`n` là số thứ tự user xem ở [phần ssh](#ssh)) . Bấm enter để tiến hành kết nối.
+- Nhập password vnc là @edabk với mọi user
 ##### Window
 - Truy cập link `https://www.realvnc.com/en/connect/download/viewer/`, tải installer cho window và chạy nó
 - Mở phần `start` (biểu tượng window góc trái dưới)
-- Nhấn đúp vào biểu tượng RealVNC. Nhập địa chỉ ip máy chủ vào thanh tìm kiếm là: 100.68.93.47:n (`n` là số thứ tự user xem ở [phần ssh](#ssh)). Bấm enter để tiến hành kết nối. Nhập password vnc là @edabk với mọi user
+- Nhấn đúp vào biểu tượng RealVNC. Nhập địa chỉ ip máy chủ vào thanh tìm kiếm là: 100.68.93.47:n (`n` là số thứ tự user xem ở [phần ssh](#ssh)). Bấm enter để tiến hành kết nối.
+- Nhập password vnc là @edabk với mọi user
 ## Extra: Chạy jupyter notebook bằng docker container
 > Hướng dẫn sau được viết cho ubuntu, mình không dùng docker trong win nên các bạn trong trường hợp này tự thân vận động vậy :)) Nghe nói docker win cũng thao tác khá giống ubuntu trong CLI
 > Trong server mình đã thực hiện hết phần set up

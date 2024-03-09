@@ -1,18 +1,26 @@
-# Hướng dẫn sử dụng  server EDABK (alpha version)
+# Hướng dẫn sử dụng  server EDABK
 ## _A cookbook made with love, passion, and caffein_
 > Chất lượng tốt hơn khi xem trên github hoặc  các markdown viewer 
 ## Step I: Tailscale
-### Tải Tailscale:
+#### Tải Tailscale:
+Ubuntu:
 ```
 sudo apt-get update
 sudo apt-get install tailscale
 ```
-### Đăng nhập:
+Window:
+- Truy cập page `https://pkgs.tailscale.com/stable/#windows`
+- Tải file `.msi` bản mới nhất tương thích với máy tính của bạn (thường là amd64)
+- Nháy đúp vào file để thực thi hoặc chạy lệnh sau với `<path_to_tailscale_msi.msi>` là đường dẫn tới file `.mbảnsi` đã tải
+```
+ msiexec /i <path_to_tailscale_msi.msi>
+```
+#### Đăng nhập:
 ```
 sudo tailscale up
 ```
 Sau khi gõ lệnh sẽ hiện ra một link, bấm  vào link này để đăng nhập.
-### Thêm server vào network của bạn
+#### Thêm server vào network của bạn
 Mở link sau trong browser:
 ```
 https://login.tailscale.com/admin/invite/7oM6QiZAmkX
@@ -31,7 +39,7 @@ Password là 123 với mọi user.
 #### X-forwarding:
 > Cũng dựa trên ssh, nhưng cho phép bạn dùng giao diện đồ họa (GUI) với  1 số app. X-forwarding  **rất chậm** với các kết nối mạng ngoài, chỉ sử dụng X-forwarding với các máy trên lab.
 
-Sửa file /etc/ssh/ssh_config bằng cách bỏ comment và sửa nội dung như sau:
+Sửa file `/etc/ssh/ssh_config` bằng cách bỏ comment và sửa nội dung như sau:
 ```
 #   ForwardAgent no
     ForwardX11 yes

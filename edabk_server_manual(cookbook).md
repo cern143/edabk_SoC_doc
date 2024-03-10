@@ -36,6 +36,7 @@ ssh $USER@100.68.93.47
 Với `$USER` là tên user được cấp cho bạn có dạng `usrn`, `n` là 1 số 1-9. Nhập user password là 123 với mọi user.
 ### X-forwarding
 > Cũng dựa trên ssh, nhưng cho phép bạn dùng giao diện đồ họa (GUI) với  1 số app. X-forwarding  **rất chậm** với các kết nối mạng ngoài, chỉ sử dụng X-forwarding với các máy trên lab.
+
 Sửa file `/etc/ssh/ssh_config` bằng cách bỏ comment và sửa nội dung như sau:
 ```
 #   ForwardAgent no
@@ -61,8 +62,7 @@ hình
 - Nhấn đúp vào biểu tượng RealVNC. Nhập địa chỉ ip máy chủ vào thanh tìm kiếm là: 100.68.93.47:n (`n` là số thứ tự user xem ở [phần ssh](#ssh)). Bấm enter để tiến hành kết nối.
 - Nhập password vnc là @edabk với mọi user
 ## Extra: Chạy jupyter notebook bằng docker container
-> Hướng dẫn sau được viết cho ubuntu, mình không dùng docker trong win nên các bạn trong trường hợp này tự thân vận động vậy :)) Nghe nói docker win cũng thao tác khá giống ubuntu trong CLI
-> Trong server mình đã thực hiện hết phần set up
+> Hướng dẫn sau được viết cho ubuntu, mình không dùng docker trong win nên các bạn trong trường hợp này tự thân vận động vậy :)) Nghe nói docker win cũng thao tác khá giống ubuntu trong CLI. Trong server mình đã thực hiện hết phần set up
 ### Set up
 - Tải docker
 ```
@@ -89,7 +89,13 @@ với `$YOURDIR` là đường dẫn tới thư mục bạn tạo ở trên. B�
 > Giải thích: `-i` cho phép container hoạt động kể cả khi đóng terminal, `-t` tạo ra 1 terminal shell cho container, `-p` gắn port của container vào host theo cú pháp `-p host_port:container_port`, `-v` bind mount đường dẫn container và host theo cú pháp `-v host_dir:container_dir`
 - Chạy lệnh trên sẽ ra 1 đống như ảnh dưới
 ![Screenshot from 2024-03-09 22-56-03](https://github.com/cern143/edabk_SoC_doc/assets/70802909/2242f7d7-65ce-4fd7-b0b8-cdaa4f8be621)
-Copy dòng được hightlight ra đâu đó, thay 8888 bằng port bạn đã chọn rồi mở link trong browser của host. Thành quả như ảnh dưới
+Copy dòng được hightlight ra đâu đó, thay 8888 bằng port bạn đã chọn.
+- Mở port trên host bằng câu lệnh:
+```
+sudo ufw allow 100000
+```
+thay 100000 bằng port bạn chọn.
+- Truy cập vào container bằng cách nhập link đã copy ra lúc trước vào browser. Thành quả như ảnh dưới:
 ![Screenshot from 2024-03-09 23-01-20](https://github.com/cern143/edabk_SoC_doc/assets/70802909/4a6248b5-9dd3-46b5-9754-493a584fcb5f)
 Chúc các bạn thực hiện thành công!
 > Mọi thắc mắc xin tag em Sơn trên nhóm. Donate cho em Sơn 1 ly cà phê vì đã cày cả tuần để set up server và viết hướng dẫn này >.<

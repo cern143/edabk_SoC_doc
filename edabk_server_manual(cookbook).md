@@ -10,7 +10,7 @@ sudo apt-get install tailscale
 ```
 ##### Window
 - Truy cập page `https://pkgs.tailscale.com/stable/#windows`
-- Tải file `.exe` bản mới nhất tương thích với máy tính của bạn (thường là amd64)
+- Tải file `.exe` bản mới nhất tương thích với máy tính của bạn (thường là bảnbản amd64)
 - Nháy đúp vào file để thực thi, khi tải xong icon Tailscale sẽ hiện lên trong taskbar (góc phải dưới)
 
 ### Đăng nhập:

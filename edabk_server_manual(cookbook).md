@@ -62,8 +62,7 @@ hình
 - Nhấn đúp vào biểu tượng RealVNC. Nhập địa chỉ ip máy chủ vào thanh tìm kiếm là: 100.68.93.47:n (`n` là số thứ tự user được cấp). Bấm enter để tiến hành kết nối.
 - Nhập password vnc là @edabk với mọi user
 ## Extra: Chạy jupyter notebook bằng docker container
-> Hướng dẫn sau được viết cho ubuntu/centos, mình không dùng docker trong win nên các bạn trong trường hợp này tự thân vận động vậy :)) Nghe nói docker win cũng thao tác khá giống ubuntu trong CLI. Trong server mình đã thực hiện hết phần set up
-> Có thể tham khảo 1 số câu lệnh thường dùng ở phần [phụ lục](#phụ-lục-những-câu-lệnh-cơ-bản-trên-docker)
+> Hướng dẫn sau được viết cho ubuntu/centos, mình không dùng docker trong win nên các bạn trong trường hợp này tự thân vận động vậy :)) Nghe nói docker win cũng thao tác khá giống ubuntu trong CLI. Trong server mình đã thực hiện hết phần set up và mở port. Có thể tham khảo 1 số câu lệnh thường dùng ở phần [phụ lục](#phụ-lục-những-câu-lệnh-cơ-bản-trên-docker)
 ### Set up
 - Tải docker
 ```

@@ -62,7 +62,7 @@ hình
 - Nhấn đúp vào biểu tượng RealVNC. Nhập địa chỉ ip máy chủ vào thanh tìm kiếm là: 100.68.93.47:n (`n` là số thứ tự user xem ở [phần ssh](#ssh)). Bấm enter để tiến hành kết nối.
 - Nhập password vnc là @edabk với mọi user
 ## Extra: Chạy jupyter notebook bằng docker container
-> Hướng dẫn sau được viết cho ubuntu, mình không dùng docker trong win nên các bạn trong trường hợp này tự thân vận động vậy :)) Nghe nói docker win cũng thao tác khá giống ubuntu trong CLI. Trong server mình đã thực hiện hết phần set up
+> Hướng dẫn sau được viết cho ubuntu/centos, mình không dùng docker trong win nên các bạn trong trường hợp này tự thân vận động vậy :)) Nghe nói docker win cũng thao tác khá giống ubuntu trong CLI. Trong server mình đã thực hiện hết phần set up
 ### Set up
 - Tải docker
 ```
@@ -85,16 +85,21 @@ Với `yourdir` là tên thư mục tùy bạn chọn
 ```
 docker run -it --rm -p 10000:8888 -v $YOURDIR:/home/jovyan/work quay.io/jupyter/scipy-notebook:latest
 ```
-với `$YOURDIR` là đường dẫn tới thư mục bạn tạo ở trên. Bạn có thể chọn port khác như 8889,100001,... miễn sao port các container dùng khônghông trùng nhau Lần đầu chạy sẽ hơi lâu vì docker phải pull image về
+với `$YOURDIR` là đường dẫn tới thư mục bạn tạo ở trên. Bạn có thể chọn port khác như 8889,100001,... miễn sao port các container dùng không trùng nhau. Lần đầu chạy sẽ hơi lâu vì docker phải pull image về
 > Giải thích: `-i` cho phép container hoạt động kể cả khi đóng terminal, `-t` tạo ra 1 terminal shell cho container, `-p` gắn port của container vào host theo cú pháp `-p host_port:container_port`, `-v` bind mount đường dẫn container và host theo cú pháp `-v host_dir:container_dir`
 - Chạy lệnh trên sẽ ra 1 đống như ảnh dưới
 ![Screenshot from 2024-03-09 22-56-03](https://github.com/cern143/edabk_SoC_doc/assets/70802909/2242f7d7-65ce-4fd7-b0b8-cdaa4f8be621)
 Copy dòng được hightlight ra đâu đó, thay 8888 bằng port bạn đã chọn.
-- Mở port trên host bằng câu lệnh:
+- Mở port trên host:
+> Ubuntu
 ```
 sudo ufw allow 100000
 ```
-thay 100000 bằng port bạn chọn.
+> CentOS:
+```
+firewall-cmd --permanent --zone=docker --add-port=10000/tcp
+```
+thay 100000 bằng port bạn đã chọn.
 - Truy cập vào container bằng cách nhập link đã copy ra lúc trước vào browser. Thành quả như ảnh dưới:
 ![Screenshot from 2024-03-09 23-01-20](https://github.com/cern143/edabk_SoC_doc/assets/70802909/4a6248b5-9dd3-46b5-9754-493a584fcb5f)
 Chúc các bạn thực hiện thành công!

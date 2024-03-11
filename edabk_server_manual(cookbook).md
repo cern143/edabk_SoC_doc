@@ -89,7 +89,7 @@ với `$YOURDIR` là đường dẫn tới thư mục bạn tạo ở trên. B�
 > Giải thích: `-i` cho phép container hoạt động kể cả khi đóng terminal, `-t` tạo ra 1 terminal shell cho container, `-p` gắn port của container vào host theo cú pháp `-p host_port:container_port`, `-v` bind mount đường dẫn container và host theo cú pháp `-v host_dir:container_dir`
 - Chạy lệnh trên sẽ ra 1 đống như ảnh dưới
 ![Screenshot from 2024-03-09 22-56-03](https://github.com/cern143/edabk_SoC_doc/assets/70802909/2242f7d7-65ce-4fd7-b0b8-cdaa4f8be621)
-Copy dòng được hightlight ra đâu đó, thay 8888 bằng port bạn đã chọn.
+Copy dòng được hightlight trong ảnh ra đâu đó, thay 8888 bằng port bạn đã chọn.
 - Mở port trên host:
 > Ubuntu
 ```

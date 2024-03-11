@@ -103,6 +103,24 @@ thay 100000 bằng port bạn đã chọn.
 - Truy cập vào container bằng cách nhập link đã copy ra lúc trước vào browser. Thành quả như ảnh dưới:
 ![Screenshot from 2024-03-09 23-01-20](https://github.com/cern143/edabk_SoC_doc/assets/70802909/4a6248b5-9dd3-46b5-9754-493a584fcb5f)
 Chúc các bạn thực hiện thành công!
+### Phụ lục: Những câu lệnh cơ bản trên docker
+- Liệt kê các container đang chạy:
+```
+docker ps
+```
+- Liệt kê tất cả container (kể cả không chạy):
+```
+docker ps -a
+```
+- Chạy terminal container trong terminal của host (hữu ích nếu quên không lưu token):
+```
+docker exec -it ID /bin/bash
+```
+với ID là id của container muốn chạy
+- Show token (chạy trong terminal của container):
+```
+jupyter list
+```
 > Mọi thắc mắc xin tag em Sơn trên nhóm. Donate cho em Sơn 1 ly cà phê vì đã cày cả tuần để set up server và viết hướng dẫn này >.<
 
 

@@ -54,13 +54,33 @@ sudo apt install remmina
 ```
 hình
 - Mở application (icon dưới cùng trong action center a.k.a cái thanh bên trái màn hình), nhấp chuột vào icon remmina để chạy app.
-- Chọn chế độ kết nối (bên cạnh thanh tìm kiếm) là VNC. Nhập địa chỉ ip máy chủ vào thanh tìm kiếm là: 100.68.93.47:n (`n` là số thứ tự user được cấpcấp) . Bấm enter để tiến hành kết nối.
+- Chọn chế độ kết nối (bên cạnh thanh tìm kiếm) là VNC. Nhập địa chỉ ip máy chủ vào thanh tìm kiếm là: 100.68.93.47:n (`n` là số thứ tự user được cấp) . Bấm enter để tiến hành kết nối.
 - Nhập password vnc là @edabk với mọi user
 ##### Window
 - Truy cập link `https://www.realvnc.com/en/connect/download/viewer/`, tải installer cho window và chạy nó
 - Mở phần `start` (biểu tượng window góc trái dưới)
 - Nhấn đúp vào biểu tượng RealVNC. Nhập địa chỉ ip máy chủ vào thanh tìm kiếm là: 100.68.93.47:n (`n` là số thứ tự user được cấp). Bấm enter để tiến hành kết nối.
 - Nhập password vnc là @edabk với mọi user
+#### Trong trường hợp server đang không hoạt động (unable to connect to server):
+- Log in vào [ssh](#ssh)
+- Chạy lệnh:
+```
+vncserver -n
+```
+Với `n` là số thứ tự user được cấp.
+- Nó sẽ ra thông báo kiểu:
+```
+Warning: localhost.localdomain:n is taken because of /tmp/.X11-unix/X1
+```
+Lưu ý: không phải lúc nào tên file cũng là `/tmp/.X11-unix/X1`
+- Xóa cái file nó bảo đi
+```
+sudo rm -rf /tmp/.X11-unix/X1
+```
+- Rồi khởi động server là xong:
+```
+vncserver -n
+```
 ## Extra: Chạy jupyter notebook bằng docker container
 > Hướng dẫn sau được viết cho ubuntu/centos, mình không dùng docker trong win nên các bạn trong trường hợp này tự thân vận động vậy :)) Nghe nói docker win cũng thao tác khá giống ubuntu trong CLI. Trong server mình đã thực hiện hết phần set up và mở port. Có thể tham khảo 1 số câu lệnh thường dùng ở phần [phụ lục](#phụ-lục-những-câu-lệnh-cơ-bản-trên-docker)
 ### Set up

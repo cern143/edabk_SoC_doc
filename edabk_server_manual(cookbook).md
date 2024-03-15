@@ -24,7 +24,7 @@ Sau khi gõ lệnh sẽ hiện ra một link, bấm  vào link này để đăng
 ### Thêm server vào network của bạn
 Mở link sau trong browser:
 ```
-https://login.tailscale.com/admin/invite/NMuKq7gyRaW
+https://login.tailscale.com/admin/invite/bk2XQGhQXiV
 ```
 Server sẽ được tự động thêm vào network của bạn.
 ## Step II: SSH và VNC

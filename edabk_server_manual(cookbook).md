@@ -24,14 +24,14 @@ Sau khi gõ lệnh sẽ hiện ra một link, bấm  vào link này để đăng
 ### Thêm server vào network của bạn
 Mở link sau trong browser:
 ```
-https://login.tailscale.com/admin/invite/7oM6QiZAmkX
+https://login.tailscale.com/admin/invite/NMuKq7gyRaW
 ```
 Server sẽ được tự động thêm vào network của bạn.
 ## Step II: SSH và VNC
 ### <a name="ssh"></a>SSH
 > Kết nối ssh sẽ chỉ cho phép bạn điều khiển server bằng command line  (CLI).
 ```
-ssh $USER@100.68.93.47
+ssh $USER@100.75.44.97
 ```
 Với `$USER` là tên user được cấp cho bạn cùng password tương ứngứng
 ### X-forwarding
@@ -54,12 +54,12 @@ sudo apt install remmina
 ```
 hình
 - Mở application (icon dưới cùng trong action center a.k.a cái thanh bên trái màn hình), nhấp chuột vào icon remmina để chạy app.
-- Chọn chế độ kết nối (bên cạnh thanh tìm kiếm) là VNC. Nhập địa chỉ ip máy chủ vào thanh tìm kiếm là: 100.68.93.47:n (`n` là số thứ tự user được cấp) . Bấm enter để tiến hành kết nối.
+- Chọn chế độ kết nối (bên cạnh thanh tìm kiếm) là VNC. Nhập địa chỉ ip máy chủ vào thanh tìm kiếm là: 100.75.44.97:n (`n` là số thứ tự user được cấp) . Bấm enter để tiến hành kết nối.
 - Nhập password vnc là @edabk với mọi user
 ##### Window
 - Truy cập link `https://www.realvnc.com/en/connect/download/viewer/`, tải installer cho window và chạy nó
 - Mở phần `start` (biểu tượng window góc trái dưới)
-- Nhấn đúp vào biểu tượng RealVNC. Nhập địa chỉ ip máy chủ vào thanh tìm kiếm là: 100.68.93.47:n (`n` là số thứ tự user được cấp). Bấm enter để tiến hành kết nối.
+- Nhấn đúp vào biểu tượng RealVNC. Nhập địa chỉ ip máy chủ vào thanh tìm kiếm là: 100.75.44.97:n (`n` là số thứ tự user được cấp). Bấm enter để tiến hành kết nối.
 - Nhập password vnc là @edabk với mọi user
 #### Trong trường hợp server đang không hoạt động (unable to connect to server):
 - Log in vào [ssh](#ssh)

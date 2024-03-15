@@ -101,11 +101,15 @@ với `$USER` là username của bạn
 mkdỉr yourdir
 ```
 Với `yourdir` là tên thư mục tùy bạn chọn
+- Liệt kê các container đã tồn tại và port tương ứng chúng sử dụng:
+```
+docker ps -a
+```
 - Tạo container với lệnh sau
 ```
 docker run -it --rm -p 10000:8888 -v $YOURDIR:/home/jovyan/work quay.io/jupyter/scipy-notebook:latest
 ```
-với `$YOURDIR` là đường dẫn tới thư mục bạn tạo ở trên. Bạn có thể chọn port khác như 8889,100001,... miễn sao port các container dùng không trùng nhau. Lần đầu chạy sẽ hơi lâu vì docker phải pull image về
+với `$YOURDIR` là đường dẫn tới thư mục bạn tạo ở trên. Bạn có thể chọn port khác như 8889,100001,... miễn sao **không trùng port** của các container đã tồn tại. Lần đầu chạy sẽ hơi lâu vì docker phải pull image về
 > Giải thích: `-i` cho phép container hoạt động kể cả khi đóng terminal, `-t` tạo ra 1 terminal shell cho container, `-p` gắn port của container vào host theo cú pháp `-p host_port:container_port`, `-v` bind mount đường dẫn container và host theo cú pháp `-v host_dir:container_dir`
 - Chạy lệnh trên sẽ ra 1 đống như ảnh dưới
 ![Screenshot from 2024-03-09 22-56-03](https://github.com/cern143/edabk_SoC_doc/assets/70802909/2242f7d7-65ce-4fd7-b0b8-cdaa4f8be621)

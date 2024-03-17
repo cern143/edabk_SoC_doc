@@ -39,7 +39,7 @@ Server sẽ được tự động thêm vào network của bạn.
 ```
 ssh $USER@100.75.44.97
 ```
-Với `$USER` là tên user được cấp cho bạn cùng password tương ứngứng
+Với `$USER` là tên user được cấp cho bạn cùng password tương ứng (hiện tại được cấp bằng cách ib cho tác giảgiả :>)
 ### X-forwarding
 > Cũng dựa trên ssh, nhưng cho phép bạn dùng giao diện đồ họa (GUI) với  1 số app. X-forwarding  **rất chậm** với các kết nối mạng ngoài, chỉ sử dụng X-forwarding với các máy trên lab.
 

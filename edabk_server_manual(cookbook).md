@@ -60,7 +60,9 @@ sudo apt install remmina
 ```
 hình
 - Mở application (icon dưới cùng trong action center a.k.a cái thanh bên trái màn hình), nhấp chuột vào icon remmina để chạy app.
-- Chọn chế độ kết nối (bên cạnh thanh tìm kiếm) là VNC. Nhập địa chỉ ip máy chủ vào thanh tìm kiếm là: 100.75.44.97:n (`n` là số thứ tự user được cấp) . Bấm enter để tiến hành kết nối.
+- Chọn chế độ kết nối (bên cạnh thanh tìm kiếm) là VNC:
+![Screenshot from 2024-03-06 11-25-56](https://github.com/cern143/edabk_SoC_doc/assets/70802909/5a2fe0b0-1193-49f1-b54c-37137733cc43)
+- Nhập địa chỉ ip máy chủ vào thanh tìm kiếm là: 100.75.44.97:n (`n` là số thứ tự user được cấp) . Bấm enter để tiến hành kết nối.
 - Nhập password vnc là @edabk với mọi user
 ##### Window
 - Truy cập link `https://www.realvnc.com/en/connect/download/viewer/`, tải installer cho window và chạy nó

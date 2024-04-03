@@ -53,17 +53,7 @@ Sửa file `/etc/ssh/ssh_config` bằng cách bỏ comment và sửa nội dung 
 ### VNC
 #### Tải viewer cho VNC:
 ##### Ubuntu
-
-```
-sudo apt update
-sudo apt install remmina
-```
-hình
-- Mở application (icon dưới cùng trong action center a.k.a cái thanh bên trái màn hình), nhấp chuột vào icon remmina để chạy app.
-- Chọn chế độ kết nối (bên cạnh thanh tìm kiếm) là VNC:
-![Screenshot from 2024-03-17 20-35-17](https://github.com/cern143/edabk_SoC_doc/assets/70802909/93e93df2-f76c-4d4c-b2b8-6bb92931b161)
-- Nhập địa chỉ ip máy chủ vào thanh tìm kiếm là: 100.75.44.97:n (`n` là số thứ tự user được cấp) . Bấm enter để tiến hành kết nối.
-- Nhập password vnc là @edabk với mọi user
+Làm như win nhưng tải installer cho ubuntuubuntu
 ##### Window
 - Truy cập link `https://www.realvnc.com/en/connect/download/viewer/`, tải installer cho window và chạy nó
 - Mở phần `start` (biểu tượng window góc trái dưới)

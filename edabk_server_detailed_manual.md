@@ -11,5 +11,5 @@
 firewall-cmd --add-port=2888/tcp
 ```
 Sở dĩ phải open port vì nó mặc định là đóng. Điều này ngăn 1 pc kết nối với pc của bạn mà chưa được phép.
-###### Important note: 2 kết nối **KHÔNG THỂ DÙNG CHUNG 1 CỔNG!**
-###### Ứng dụng: vì mỗi (docker) container được coi là 1 thiết bị ảo, nên ta cần mở 1 cổng trên pc và kết nối cổng đó với container để truy cập vào 1 số tính năng của nó (e.g jupyter notebook)
+##### Important note: 2 kết nối **KHÔNG THỂ DÙNG CHUNG 1 CỔNG!**
+##### Ứng dụng: vì mỗi (docker) container được coi là 1 thiết bị ảo, nên ta cần mở 1 cổng trên pc và kết nối cổng đó với container để truy cập vào 1 số tính năng của nó (e.g jupyter notebook)

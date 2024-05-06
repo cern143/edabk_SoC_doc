@@ -1,10 +1,10 @@
-# Hướng dẫn sử dụng  server EDABK
+# Hướng dẫn sử dụng server EDABK
 ## _A cookbook made with love, passion, and caffein_
 > Làm ơn **đọc kĩ**, 90% trường hợp set up **thất bại là do bỏ bước**  
 ## Step I: Tailscale
 ### Tải Tailscale:
 ##### Ubuntu
-- Thêm vào Tailscale’s package signing key vàvà repository:
+- Thêm vào Tailscale’s package signing key và repository:
 ```
 curl -fsSL https://pkgs.tailscale.com/stable/ubuntu/focal.noarmor.gpg | sudo tee /usr/share/keyrings/tailscale-archive-keyring.gpg >/dev/null
 curl -fsSL https://pkgs.tailscale.com/stable/ubuntu/focal.tailscale-keyring.list | sudo tee /etc/apt/sources.list.d/tailscale.list

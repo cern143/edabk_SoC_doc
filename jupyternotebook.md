@@ -7,7 +7,7 @@
 ### 2. Các bước tải:
 - Bước 1: Truy cập vào github miniforge `https://github.com/conda-forge/miniforge`
 - Bước 2: Tải về miniforge installer
-/home/cern/Downloads/Screenshot from 2024-05-25 21-13-24.jpg
+file:///home/cern/Downloads/Screenshot%20from%202024-05-25%2021-13-24.jpg
 - Bước 3: Cấp quyền thực thi và chạy installer: (**thay thế /path/to/installer bằng đường dẫn thật tới Miniforge3-Linux-x86_64.sh**)
 ```
 sudo chmod +x /path/to/installer
@@ -22,7 +22,7 @@ pip install jupyter
 ```
 ### 2. Chạy notebook: 
 - Mở terminal tại đường dẫn chứa jupyter notebook cần chạy:
-/home/cern/Pictures/Screenshot from 2024-05-25 21-27-19.png
+file:///home/cern/Pictures/Screenshot%20from%202024-05-25%2021-27-19.png
 Rồi chạy lệnh:
 ```
 jupyter notebook ip=0.0.0.0 --port=8889

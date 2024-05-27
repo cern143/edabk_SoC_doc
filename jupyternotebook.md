@@ -5,7 +5,7 @@
 + Miniconda là quản lý các môi trường ảo của python. Một môi trường ảo thực chất là những đường dẫn tới các phiên bản python khác với phiên bản của máy. **LUÔN CHẠY PYTHON TRONG MÔI TRƯỜNG ẢO** vì nếu không có thể dẫn tới xung đột với python mặc định của OS => Liệm.
 + Micromamba là package manager. Conda đã có sẵn package manger là pip nhưng theo document của họ thì micromamba resolve package nhanh hơn và ít xung đột hơn.
 ### 2. Các bước tải:
-Paste đoạn sau vào file .bashrc
+Paste đoạn sau vào file `.bashrc`
 ```
 # >>> conda initialize >>>
 # !! Contents within this block are managed by 'conda init' !!

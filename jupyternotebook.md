@@ -38,7 +38,7 @@ pip install jupyter
 
 Rồi chạy lệnh:
 ```
-jupyter notebook ip=0.0.0.0 --port=8889
+jupyter notebook --ip=0.0.0.0 --port=8889
 ```
 Chúc mn thành công!
   

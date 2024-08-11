@@ -2,9 +2,12 @@
 ## I. Set up environment:
 B1: Truy cập vào directory `/home/edabk/cadence_script` trên server
 
-B2: Copy file run.csh vào đường dẫn `$HOME` của mình
+B2: Copy file run.csh vào đường dẫn `$HOME` của mình. Có thể check bằng cách mở terminal và nhập:
+```
+echo $HOME
+```
 
-B3: Mở terminal ở , nhập lệnh 
+B3: Mở terminal ở `$HOME`, nhập lệnh 
 ```
 csh
 ``` 

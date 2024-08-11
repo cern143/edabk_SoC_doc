@@ -1,8 +1,8 @@
 # Hướng dẫn chạy genus trên server
 ## I. Set up environment:
-B1: Truy cập vào directory `/home/edabk/cadence_script` trên server
+B1: Truy cập vào thư mục `/home/edabk/cadence_script` trên server
 
-B2: Copy file run.csh vào đường dẫn `$HOME` của mình. Có thể check bằng cách mở terminal và nhập:
+B2: Copy file run.csh vào thư mục `$HOME` của mình. Có thể check bằng cách mở terminal và nhập:
 ```
 echo $HOME
 ```

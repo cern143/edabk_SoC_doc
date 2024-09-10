@@ -1,4 +1,4 @@
-# Hướng dẫn chạy genus trên server
+# Hướng dẫn chạy tool cadence trên server
 B1: Truy cập vào thư mục `/home/edabk/cadence_script` trên server
 
 B2: Copy file run.sh vào thư mục `$HOME` của mình. Có thể check bằng cách mở terminal và nhập:

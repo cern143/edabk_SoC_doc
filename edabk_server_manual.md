@@ -60,7 +60,21 @@ B2: Tải realvnc viewer
 ![Screenshot (21)](https://github.com/user-attachments/assets/f04ba00d-0e37-4a1e-a712-674d3812dbf7)
 ![Screenshot (24)](https://github.com/user-attachments/assets/77ca4bfb-339b-4002-a405-d24226a502c4)
 - Khởi chạy RealVNC viewer. Bấm vào log in rồi đóng cửa sổ khi được yêu cầu đăng nhập. Nhập địa chỉ ip máy chủ vào thanh tìm kiếm là: 100.75.44.97:n (`n` là số thứ tự user được cấp). Bấm enter để tiến hành kết nối
+**Nếu không kết nối được hãy thử khởi động lại pc**
+![Screenshot (28)](https://github.com/user-attachments/assets/f7e3708c-c69b-4078-b621-765b9952da29)
+![Screenshot (30)](https://github.com/user-attachments/assets/909b0455-f93b-420c-bca6-2fb6da0ddecf)
 - Nhập password vnc là @edabk với mọi user
+**Pass user khác với pass vnc
+![Screenshot (31)](https://github.com/user-attachments/assets/32727c46-639e-4f30-b4d2-5dc465947d92)
+- Khi kết nối thành công sẽ hiện ra màn hình của server. Nhập password của user để đăng nhập
+![Screenshot (32)](https://github.com/user-attachments/assets/468d3dd9-d92f-43df-ad6b-a9450e383668)
+![Screenshot (33)](https://github.com/user-attachments/assets/88ed9b2d-c9ee-40a1-81d0-7f5882f6f521)
+B3: Điều chỉnh thêm:
+- Chỉnh picture quality lên medium để có màu bình 
+![Screenshot (34)](https://github.com/user-attachments/assets/80254738-3fff-4682-b00a-c28f960337bb)
+![Screenshot (35)](https://github.com/user-attachments/assets/cbd50030-b0f0-4260-a162-07b1ae1cb606)
+- Chỉnh setting centos để có kích thước hiển thị phù hợp với màn hình (thường là 16:9)
+![Screenshot (36)](https://github.com/user-attachments/assets/38e8115b-0bc2-408b-b6de-f8c332ade166)
 
 ****
 ### <a name="fix"></a> Sửa lỗi:

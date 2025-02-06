@@ -46,15 +46,7 @@ Với `$USER` là tên user được cấp (bởi admin) cùng password tương 
 Làm như hướng dẫn cho win (bên dưới) nhưng tải installer cho ubuntu
 
 #### Window
-B1: Khởi chạy session vncserver trên server
-- Kết nối tới server bằng [ssh](#ssh)
-- Chạy lệnh:
-```
-vncserver :n
-```
-Với `n` là port được cấp.
-
-B2: Tải realvnc viewer 
+B1: Tải realvnc viewer 
 - Truy cập link `https://www.realvnc.com/en/connect/download/viewer/`, tải installer cho window và chạy nó. Bấm next tất cả prompt 
 ![Screenshot (20)](https://github.com/user-attachments/assets/1cc92895-132f-4468-9617-f567b75aaacd)
 ![Screenshot (21)](https://github.com/user-attachments/assets/f04ba00d-0e37-4a1e-a712-674d3812dbf7)
@@ -69,7 +61,7 @@ B2: Tải realvnc viewer
 - Khi kết nối thành công sẽ hiện ra màn hình của server. Nhập password của user để đăng nhập
 ![Screenshot (32)](https://github.com/user-attachments/assets/468d3dd9-d92f-43df-ad6b-a9450e383668)
 ![Screenshot (33)](https://github.com/user-attachments/assets/88ed9b2d-c9ee-40a1-81d0-7f5882f6f521)
-B3: Điều chỉnh thêm:
+B2: Điều chỉnh thêm:
 - Chỉnh picture quality lên medium để có màu bình 
 ![Screenshot (34)](https://github.com/user-attachments/assets/80254738-3fff-4682-b00a-c28f960337bb)
 ![Screenshot (35)](https://github.com/user-attachments/assets/cbd50030-b0f0-4260-a162-07b1ae1cb606)
